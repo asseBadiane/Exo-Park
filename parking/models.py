@@ -11,3 +11,9 @@ class Place(models.Model):
     occupee = models.BooleanField(default=False)
     utilisateur = models.ForeignKey(
         User, on_delete=models.SET_NULL, null=True, blank=True)
+
+    def __str__(self):
+        if self.occupee:
+            return f"Place {self.numero} - Occupée par {self.utilisateur.username}"
+        else:
+            return f"Place {self.numero} - Libre"
