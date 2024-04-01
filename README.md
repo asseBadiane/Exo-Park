@@ -24,8 +24,9 @@ cd Exo-Park
  ```
  pip install -r requirements.txt
 ```
-6. Tu dois créer un fichier .env et le configurer avec les donnés suivant:
+6. Tu dois créer un fichier .env et le configurer avec ta base PostgreSQL:
    ```
+   touch .env
    DB_NAME="database_name"
    DB_USER="user_name"
    DB_PASSWORD="password"
