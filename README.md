@@ -14,12 +14,14 @@ git clone <URL_du_référentiel_backend>
 
 cd <nom_du_répertoire_backend>
 
-
 4. Installez les dépendances du projet (le cas échéant) en exécutant :
-
-npm install
-
+5. Créer un environnement virtuelle
+ python3 -m venv env
+6. Install les dépendances 
+   pip install -r requirements.txt
+   
 5. Vous êtes prêt à travailler sur le backend.
+   
 
 ## Frontend
 
